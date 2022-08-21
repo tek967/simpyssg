@@ -1,3 +1,4 @@
-my_str = "hello***world"
-step_1 = [my_str[:5], my_str[5:8], my_str[8:]]
-print(step_1)
+"playground"
+
+with open('./test.txt') as t:
+    print(t.readlines())
