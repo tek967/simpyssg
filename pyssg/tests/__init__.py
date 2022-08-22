@@ -25,9 +25,9 @@ def round_2(text: list) -> list:
                 print("detected heading 1")
                 retval.append("# ")
                 retval.append(text[0][int(text[0].find("#"))+2:len(text[0])])
-                break
-
-    return retval
+                return retval
+        elif char != "#" and char != " ":
+            return text
 
 if __name__ == "__main__":
     print(round_2([" a  # hello"]))
